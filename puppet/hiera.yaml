@@ -1,0 +1,11 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - "nodes/%{::clientcert}"
+  - "default_%{::operatingsystem}_%{::operatingsystemmajrelease}"
+  - default
+:yaml:
+  :datadir: "%{settings::manifestdir}/hieradata"
+
+
