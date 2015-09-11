@@ -1,4 +1,4 @@
 ---
-- name: jenkins
-- name: pulp  
-- name: docker  
+- :name: jenkins
+- :name: pulp  
+- :name: docker  

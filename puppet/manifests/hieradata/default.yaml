@@ -1,15 +1,7 @@
 ---
 classes:
-  - postfix
-  - sudo
   - resolvconf
   - motd
- 
-postfix::os_mail: 'krist.vanbesien@gmail.com'
-postfix::os_mail_canonical: 'krist.vanbesien@gmail.com'
-
-sudo::purge_rules: true
-sudo::purge_noop: true
 
 resolvconf::nameservers:
   - '8.8.8.8'
