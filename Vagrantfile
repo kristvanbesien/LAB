@@ -24,7 +24,9 @@ Vagrant.configure(2) do |config|
     end
   end
 
-  config.puppet_install.puppet_version = "3.7.5"
+  config.puppet_install.puppet_version = "3.8.2"
+
+  config.vm.provision :shell, inline: 'gem install deep_merge'
 
   config.vm.provision :puppet, run: "always"  do |puppet|
     puppet.hiera_config_path = "puppet/hiera.yaml"
@@ -32,6 +34,7 @@ Vagrant.configure(2) do |config|
     puppet.module_path = "puppet/modules"
     puppet.manifest_file  = "site.pp"
   end
+
 
   boxes.each do |opts|
     config.vm.define opts[:name] do |config|
