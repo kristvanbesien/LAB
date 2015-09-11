@@ -2,3 +2,5 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'ringingliberty-chrony'
 mod 'saz-resolv_conf'
+mod 'CERNOps-motd'
+mod 'rnelson0-hiera_resources'

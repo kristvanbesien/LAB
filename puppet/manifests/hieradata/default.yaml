@@ -1,15 +1,15 @@
 ---
 classes:
-  - resolvconf
+  - resolv_conf
   - motd
 
-resolvconf::nameservers:
+resolv_conf::nameservers:
   - '8.8.8.8'
   - '8.8.4.4'
 
 my_resources:
-  ssh_key:
+  ssh_authorized_key:
     krist_on_mac:
       user: vagrant
-      key: 'AAAAB3NzaC1kc3MAAACBAOQ6haaBQFzjBfGWjLPoezhwQqA51TnS2HwD6QNQK5dTNE0zIw7mVHAPAfneMFzN7A2PDtpUQ7qGh565YjUqarNAlOeGftipb+RJ9FlZwKf063UcsOsJmtpDprJODye8wQ4tAytYH1rh7uDKwZs9acoY5SlxK7hAO5xntojahqbBAAAAFQDvcIgmvcP7aXTrgdv9PXweIkBC0wAAAIAbQX9OoUdX+BjjF1I4dZk9YBdV8Xix36TJ3FbXcf5c0T1F+5yiXO+DJYnM1LWcJNuFxy35WoLkerZ79raateE2o8LIfF+nIrNFWjY98DNZfoxMGWgiPsF8Y/WQgqlyGe4LiCDxsGyqHutfaxb3R4hHU8Rolk17kWRqmr1R5WGc9wAAAIEAyZ1xDeQUR3cW75049iK+2qPzQeCXpH+IgcZngqtM8yMjs7Jm5uF+npN2gcIlWDh/UL7M2FVDCG2cdZXnY1tXER6HqVP7tA4nO8qd9bQXT0ydBKMJBllbDSuIxseOMXAT0Fg0t2M0WrU2DSffk4VKaF8Vu13I16if3RnvMXxQV3I=',
+      key: 'AAAAB3NzaC1kc3MAAACBAOQ6haaBQFzjBfGWjLPoezhwQqA51TnS2HwD6QNQK5dTNE0zIw7mVHAPAfneMFzN7A2PDtpUQ7qGh565YjUqarNAlOeGftipb+RJ9FlZwKf063UcsOsJmtpDprJODye8wQ4tAytYH1rh7uDKwZs9acoY5SlxK7hAO5xntojahqbBAAAAFQDvcIgmvcP7aXTrgdv9PXweIkBC0wAAAIAbQX9OoUdX+BjjF1I4dZk9YBdV8Xix36TJ3FbXcf5c0T1F+5yiXO+DJYnM1LWcJNuFxy35WoLkerZ79raateE2o8LIfF+nIrNFWjY98DNZfoxMGWgiPsF8Y/WQgqlyGe4LiCDxsGyqHutfaxb3R4hHU8Rolk17kWRqmr1R5WGc9wAAAIEAyZ1xDeQUR3cW75049iK+2qPzQeCXpH+IgcZngqtM8yMjs7Jm5uF+npN2gcIlWDh/UL7M2FVDCG2cdZXnY1tXER6HqVP7tA4nO8qd9bQXT0ydBKMJBllbDSuIxseOMXAT0Fg0t2M0WrU2DSffk4VKaF8Vu13I16if3RnvMXxQV3I='
       type: 'ssh-dss'
