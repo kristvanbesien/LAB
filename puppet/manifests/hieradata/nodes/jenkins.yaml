@@ -1,0 +1,12 @@
+---
+my_resources:
+  motd::header: 
+    'First Header':
+       message: 'This is the first header'
+    'Second Header':
+       message: 'This is the second header'
+---
+my_resources:
+  motd::header: 
+    'Third Header':
+       message: 'This should not be here'

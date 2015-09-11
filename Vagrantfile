@@ -7,7 +7,8 @@ VAGRANT_ROOT = File.dirname(File.expand_path(__FILE__))
 require 'yaml'
  
 # Read YAML file with box details
-boxes = YAML.load_file('servers.yaml')
+serverfile = File.join(VAGRANT_ROOT,'servers.yaml')
+boxes = YAML.load_file(serverfile)
 
 
 Vagrant.configure(2) do |config|
@@ -46,6 +47,6 @@ Vagrant.configure(2) do |config|
       end
     end
   end
-
-
 end
+
+

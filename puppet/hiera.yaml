@@ -2,10 +2,11 @@
 :backends:
   - yaml
 :hierarchy:
-  - "nodes/%{::clientcert}"
+  - "nodes/%{hostname}"
   - "default_%{::operatingsystem}_%{::operatingsystemmajrelease}"
   - default
 :yaml:
   :datadir: "%{settings::manifestdir}/hieradata"
+:merge_behavior: deeper
 
 
