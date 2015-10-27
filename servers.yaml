@@ -1,4 +1,4 @@
 ---
-- :name: jenkins
-- :name: pulp  
-- :name: docker  
+- :name: jenkins.vanbesien.net
+- :name: pulp.vanbesien.net 
+- :name: docker.vanbesien.net  

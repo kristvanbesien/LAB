@@ -1,0 +1,20 @@
+---
+classes:
+  - pulp
+  - epel
+
+my_resources:
+  yumrepo:
+    pulp-stable:
+      baseurl: 'https://repos.fedorapeople.org/repos/pulp/pulp/stable/2/$releasever/$basearch/'
+      descr: "Pulp 2 production release" 
+      enabled: 1
+      gpgcheck: 1
+      gpgkey: 'https://repos.fedorapeople.org/repos/pulp/pulp/GPG-RPM-KEY-pulp-2'
+      
+pulp::default_login: 'admin'
+pulp::default_password: 'admin'
+pulp::enable_docker: true
+
+
+
