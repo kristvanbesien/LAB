@@ -2,7 +2,7 @@
 :backends:
   - yaml
 :hierarchy:
-  - "nodes/%{hostname}"
+  - "nodes/%{fqdn}"
   - "default_%{::operatingsystem}_%{::operatingsystemmajrelease}"
   - default
 :yaml:

@@ -11,10 +11,13 @@ my_resources:
       enabled: 1
       gpgcheck: 1
       gpgkey: 'https://repos.fedorapeople.org/repos/pulp/pulp/GPG-RPM-KEY-pulp-2'
+  package:
+    erlang: {}
       
 pulp::default_login: 'admin'
 pulp::default_password: 'admin'
 pulp::enable_docker: true
+pulp::messaging_transport: 'rabbitmq'
 
 
 

@@ -27,6 +27,7 @@ jenkins::plugin_hash:
   token-macro: 
     version: 1.10
   multiple-scms: {}
+  job-dsl: {}
   
 my_resources:
   package:
